@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="page">
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li>@Html.ActionLink("Grid", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Form", "NewSomething", "Home")</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="main">
+            @RenderBody()
+        </section>
+        <footer>
+		This is an example of the problem i posted at stack overflow:
+			<a href="http://stackoverflow.com/questions/9909850/chrome-history-bug-maybe-doing-prg-and-when-navigating-again-to-the-same-form" >http://stackoverflow.com/questions/9909850/chrome-history-bug-maybe-doing-prg-and-when-navigating-again-to-the-same-form</a> <br />
+			View/edit the code at GitHub -  <a href="https://github.com/avipinto/ChromePRG">https://github.com/avipinto/ChromePRG</a>
+        </footer>
+    </div>
+</body>
+</html>

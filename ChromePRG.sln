@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromePRG", "ChromePRG\ChromePRG.csproj", "{908579E7-85D8-4F88-9965-52B9DB3C1EDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{908579E7-85D8-4F88-9965-52B9DB3C1EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908579E7-85D8-4F88-9965-52B9DB3C1EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908579E7-85D8-4F88-9965-52B9DB3C1EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908579E7-85D8-4F88-9965-52B9DB3C1EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
