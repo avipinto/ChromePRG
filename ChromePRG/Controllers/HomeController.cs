@@ -8,20 +8,32 @@ namespace ChromePRG.Controllers
 {
 	public class HomeController : Controller
 	{
-		public ActionResult Index()
+		public ActionResult Grid()
 		{
 			return View();
 		}
 
-		public ActionResult NewSomething()
+		public ActionResult RedirectWith302()
 		{
-			return View();
+			return View("NewSomething");
 		}
 
 		[HttpPost]
-		public ActionResult NewSomething(string someData)
+		public ActionResult RedirectWith302(string someData)
 		{
-			return RedirectToAction("index");
+			return RedirectToAction("Grid");
+		}
+
+
+		public ActionResult RedirectWith303()
+		{
+			return View("NewSomething");
+		}
+
+		[HttpPost]
+		public ActionResult RedirectWith303(string someData)
+		{
+			return new SeeOtherRedirectResult(this.HttpContext.Request.RequestContext, "Grid", "Home");
 		}
 	}
 }
